@@ -5,7 +5,7 @@ public struct User: Codable, Identifiable {
   public typealias ID = String
   
   //added by SpicyApps
-  public let tweets: [Tweet]
+  public var tweets: [Tweet]
   
   /// The unique identifier of this user.
   public let id: ID
