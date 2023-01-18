@@ -102,7 +102,7 @@ public class Twift: NSObject, ObservableObject {
       throw TwiftError.WrongAuthenticationType(needs: .oauth2UserAuth)
     }
     
-    // Return early if the token has not yet expired
+    // Return early if the token has not yet expiredd
     if onlyIfExpired && !oauthUser.expired {
       return
     }
