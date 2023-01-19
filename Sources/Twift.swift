@@ -125,7 +125,7 @@ public class Twift: NSObject, ObservableObject {
     
     let encodedBody = OAuthHelper.httpBody(forFormParameters: body)
     refreshRequest.httpBody = encodedBody
-    print("refreshRequest.description")
+    print(refreshRequest.description)
     let (data, _) = try await URLSession.shared.data(for: refreshRequest)
     
     var refreshedOAuthUser = try JSONDecoder().decode(OAuth2User.self, from: data)
