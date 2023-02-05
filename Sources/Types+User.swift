@@ -84,6 +84,10 @@ extension User {
     
     /// The number of lists of which this user is a member
     public let listedCount: Int
+    
+    //added by SpicyApps
+    //number of Tweets
+    public let tweetsCount: Int
   }
   
   /// Contains details about text that has a special meaning in the user's description
