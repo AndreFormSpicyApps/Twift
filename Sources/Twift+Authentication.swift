@@ -204,7 +204,7 @@ extension Twift.Authentication {
         }
         return continuation.resume(throwing: TwiftError.UnknownError("There was a problem authenticating the user: no URL was returned from the first authentication step."))
       }
-      
+      authSession.prefersEphemeralWebBrowserSession = false
       authSession.presentationContextProvider = presentationContextProvider ?? self
       authSession.start()
     }
