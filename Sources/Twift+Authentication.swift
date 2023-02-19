@@ -204,7 +204,10 @@ extension Twift.Authentication {
         }
         return continuation.resume(throwing: TwiftError.UnknownError("There was a problem authenticating the user: no URL was returned from the first authentication step."))
       }
+                                                                      
+      //added by SpicyApps - do not take twitter login cookies from Safari                                                                  
       authSession.prefersEphemeralWebBrowserSession = true
+                                                                      
       authSession.presentationContextProvider = presentationContextProvider ?? self
       authSession.start()
     }
