@@ -16,7 +16,7 @@ public struct User: Codable, Identifiable {
   public let username: String
   
   /// The UTC datetime that the user account was created on Twitter.
-  //public let createdAt: Date?
+  public let createdAt: Date?
   
   /// Indicates if this user has chosen to protect their Tweets (in other words, if this user's Tweets are private).
   public let protected: Bool?
