@@ -3,20 +3,17 @@ import Foundation
 /// The user object contains Twitter user account metadata describing the referenced user.
 public struct User: Codable, Identifiable {
   public typealias ID = String
-  
-  //added by SpicyApps
-  public var tweets: [Tweet]?
+
   
   /// The unique identifier of this user.
   public let id: ID
    
-  //added by SpicyApps optional
+
   /// The name of the user, as they’ve defined it on their profile. Not necessarily a person’s name. Typically capped at 50 characters, but subject to change.
-  public let name: String?
-  
-   //added by SpicyApps optional
+  public let name: String
+
   /// The Twitter screen name, handle, or alias that this user identifies themselves with. Usernames are unique but subject to change. Typically a maximum of 15 characters long, but some historical accounts may exist with longer names.
-  public let username: String?
+  public let username: String
   
   /// The UTC datetime that the user account was created on Twitter.
   public let createdAt: Date?
@@ -84,9 +81,8 @@ extension User {
     /// The number of users this user is following
     public let followingCount: Int
     
-    //added by SpicyApps optional
     /// The number of lists of which this user is a member
-    public let listedCount: Int?
+    public let listedCount: Int
     
     //added by SpicyApps
     //number of Tweets
