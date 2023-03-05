@@ -29,7 +29,8 @@ extension Twift {
     let (data, response) = try await URLSession.shared.data(for: request)
      let resp = response as? HTTPURLResponse
     print(resp?.statusCode.description)
-    
+    print("data")
+
     return try decodeOrThrow(decodingType: T.self, data: data)
   }
   
@@ -305,7 +306,6 @@ extension Twift {
   
   internal func decodeOrThrow<T: Codable>(decodingType: T.Type, data: Data) throws -> T {
     guard let result = try? decoder.decode(decodingType.self, from: data) else {
-            print("data")
 
       if let error = try? decoder.decode(TwitterAPIError.self, from: data) { throw error }
       throw TwiftError.UnknownError(String(data: data, encoding: .utf8))
