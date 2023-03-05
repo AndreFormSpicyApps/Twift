@@ -143,7 +143,7 @@ extension User: Fielded {
     switch field {
     case \.createdAt: return "created_at"
     case \.description: return "description"
-    case \.entities: return "entities"
+    //case \.entities: return "entities"
     case \.location: return "location"
     case \.pinnedTweetId: return "pinned_tweet_id"
     case \.profileImageUrl: return "profile_image_url"
