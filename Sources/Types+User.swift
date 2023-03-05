@@ -42,6 +42,7 @@ public struct User: Codable, Identifiable {
   /// Contains details about text that has a special meaning in the user's description.
   public let entities: Entities?
   
+  //SpicyApps modified - changed Type from URL to String - Server API can deliver an empty string instead of an URL
   /// The URL to the profile image for this user, as shown on the user's profile.
   public let profileImageUrl: String?
   
