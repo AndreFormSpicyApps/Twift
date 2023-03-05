@@ -34,7 +34,7 @@ public struct User: Codable, Identifiable {
   public let url: String?
   
   /// The text of this user's profile description (also known as bio), if the user provided one.
- // public let description: String?
+  public let description: String?
   
   /// Indicates if this user is a verified Twitter User.
   public let verified: Bool?
