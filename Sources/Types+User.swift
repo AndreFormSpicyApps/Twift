@@ -16,7 +16,7 @@ public struct User: Codable, Identifiable {
   public let username: String
   
   /// The UTC datetime that the user account was created on Twitter.
-  public let createdAt: Date?
+  //public let createdAt: Date?
   
   /// Indicates if this user has chosen to protect their Tweets (in other words, if this user's Tweets are private).
   public let protected: Bool?
@@ -64,7 +64,7 @@ public struct User: Codable, Identifiable {
   }
  
   /// Contains details about activity for this user.
-//  public let publicMetrics: UserProfileMetrics?
+  public let publicMetrics: UserProfileMetrics?
 }
 
 extension User {
@@ -148,7 +148,7 @@ extension User: Fielded {
     case \.pinnedTweetId: return "pinned_tweet_id"
     case \.profileImageUrl: return "profile_image_url"
     case \.protected: return "protected"
-    //case \.publicMetrics: return "public_metrics"
+    case \.publicMetrics: return "public_metrics"
     case \.url: return "url"
     case \.verified: return "verified"
     case \.withheld: return "withheld"
