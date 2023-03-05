@@ -64,7 +64,7 @@ public struct User: Codable, Identifiable {
   }
  
   /// Contains details about activity for this user.
-  public let publicMetrics: UserProfileMetrics?
+//  public let publicMetrics: UserProfileMetrics?
 }
 
 extension User {
