@@ -29,7 +29,7 @@ extension Twift {
     let (data, response) = try await URLSession.shared.data(for: request)
      let resp = response as? HTTPURLResponse
     print(resp?.statusCode.description)
-    print(data)
+    
 
     return try decodeOrThrow(decodingType: T.self, data: data)
   }
