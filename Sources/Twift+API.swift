@@ -24,8 +24,11 @@ extension Twift {
     }
     
     signURLRequest(method: method, body: body, request: &request)
-
-    let (data, _) = try await URLSession.shared.data(for: request)
+  
+    //SpicyApps modified
+    let (data, response) = try await URLSession.shared.data(for: request)
+     let resp = response as? HTTPURLResponse
+    print(resp?.statusCode.description)
     
     return try decodeOrThrow(decodingType: T.self, data: data)
   }
