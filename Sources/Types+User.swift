@@ -43,7 +43,7 @@ public struct User: Codable, Identifiable {
   public let entities: Entities?
   
   /// The URL to the profile image for this user, as shown on the user's profile.
-  public let profileImageUrl: URL?
+ // public let profileImageUrl: URL?
   
   /// A URL to larger version of the user's profile image
   public var profileImageUrlLarger: URL? {
