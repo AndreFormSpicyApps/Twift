@@ -8,7 +8,7 @@ public struct User: Codable, Identifiable {
   /// The unique identifier of this user.
   public let id: ID
    
- /*
+
   /// The name of the user, as they’ve defined it on their profile. Not necessarily a person’s name. Typically capped at 50 characters, but subject to change.
   public let name: String
 
@@ -62,7 +62,7 @@ public struct User: Codable, Identifiable {
       return profileImageUrl
     }
   }
-  */
+ 
   /// Contains details about activity for this user.
   public let publicMetrics: UserProfileMetrics?
 }
