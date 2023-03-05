@@ -8,7 +8,7 @@ public struct User: Codable, Identifiable {
   /// The unique identifier of this user.
   public let id: ID
    
-
+ /*
   /// The name of the user, as they’ve defined it on their profile. Not necessarily a person’s name. Typically capped at 50 characters, but subject to change.
   public let name: String
 
@@ -43,8 +43,8 @@ public struct User: Codable, Identifiable {
   public let entities: Entities?
   
   /// The URL to the profile image for this user, as shown on the user's profile.
- // public let profileImageUrl: URL?
-  /*
+  public let profileImageUrl: URL?
+ 
   /// A URL to larger version of the user's profile image
   public var profileImageUrlLarger: URL? {
     if let urlString = profileImageUrl?.absoluteString.replacingOccurrences(of: "_normal", with: "_x96") {
