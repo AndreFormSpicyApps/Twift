@@ -10,7 +10,7 @@ public struct User: Codable, Identifiable {
    
 
   /// The name of the user, as they’ve defined it on their profile. Not necessarily a person’s name. Typically capped at 50 characters, but subject to change.
-  public let name: String?
+  public let name: String
 
   /// The Twitter screen name, handle, or alias that this user identifies themselves with. Usernames are unique but subject to change. Typically a maximum of 15 characters long, but some historical accounts may exist with longer names.
   public let username: String
@@ -40,7 +40,7 @@ public struct User: Codable, Identifiable {
   public let verified: Bool?
   
   /// Contains details about text that has a special meaning in the user's description.
-  //public let entities: Entities?
+  public let entities: Entities?
   
   /// The URL to the profile image for this user, as shown on the user's profile.
   public let profileImageUrl: URL?
@@ -143,7 +143,7 @@ extension User: Fielded {
     switch field {
     case \.createdAt: return "created_at"
     case \.description: return "description"
-    //case \.entities: return "entities"
+    case \.entities: return "entities"
     case \.location: return "location"
     case \.pinnedTweetId: return "pinned_tweet_id"
     case \.profileImageUrl: return "profile_image_url"
