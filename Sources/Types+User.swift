@@ -148,7 +148,7 @@ extension User: Fielded {
     case \.pinnedTweetId: return "pinned_tweet_id"
     case \.profileImageUrl: return "profile_image_url"
     case \.protected: return "protected"
-    case \.publicMetrics: return "public_metrics"
+    //case \.publicMetrics: return "public_metrics"
     case \.url: return "url"
     case \.verified: return "verified"
     case \.withheld: return "withheld"
