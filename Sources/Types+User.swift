@@ -43,23 +43,23 @@ public struct User: Codable, Identifiable {
   public let entities: Entities?
   
   /// The URL to the profile image for this user, as shown on the user's profile.
-  public let profileImageUrl: URL?
- 
+  public let profileImageUrl: String?
+  
   /// A URL to larger version of the user's profile image
   public var profileImageUrlLarger: URL? {
-    if let urlString = profileImageUrl?.absoluteString.replacingOccurrences(of: "_normal", with: "_x96") {
+    if let urlString = profileImageUrl?.replacingOccurrences(of: "_normal", with: "_x96") {
       return URL(string: urlString)
     } else {
-      return profileImageUrl
+      return nil
     }
   }
   
   /// A URL to the original, unmodified version of the user's profile image. This image may be very large.
   public var profileImageUrlOriginal: URL? {
-    if let urlString = profileImageUrl?.absoluteString.replacingOccurrences(of: "_normal", with: "_original") {
+    if let urlString = profileImageUrl?.replacingOccurrences(of: "_normal", with: "_original") {
       return URL(string: urlString)
     } else {
-      return profileImageUrl
+      return nil
     }
   }
  
