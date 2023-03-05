@@ -44,7 +44,7 @@ public struct User: Codable, Identifiable {
   
   /// The URL to the profile image for this user, as shown on the user's profile.
  // public let profileImageUrl: URL?
-  
+  /*
   /// A URL to larger version of the user's profile image
   public var profileImageUrlLarger: URL? {
     if let urlString = profileImageUrl?.absoluteString.replacingOccurrences(of: "_normal", with: "_x96") {
@@ -62,7 +62,7 @@ public struct User: Codable, Identifiable {
       return profileImageUrl
     }
   }
-  
+  */
   /// Contains details about activity for this user.
   public let publicMetrics: UserProfileMetrics?
 }
