@@ -4,6 +4,8 @@ import Foundation
 public struct User: Codable, Identifiable {
   public typealias ID = String
 
+  ///added by SpicyApps
+  public let relation: Relation
   
   /// The unique identifier of this user.
   public let id: ID
