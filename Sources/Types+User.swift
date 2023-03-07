@@ -1,19 +1,13 @@
 import Foundation
 
-///added by SpicyApps
-enum Relation: String {
-    case youFollowEachother = "←→ you follow eachother"
-    case youAreFollowed = "← you are followed"
-    case youFollow = "→ you follow"
-    case noRelationship = "- no relationship"
-}
+ 
 
 /// The user object contains Twitter user account metadata describing the referenced user.
 public struct User: Codable, Identifiable {
   public typealias ID = String
 
   ///added by SpicyApps
-  public let relation: Relation
+  public let relation: String
   
   /// The unique identifier of this user.
   public let id: ID
