@@ -3,7 +3,7 @@ import Foundation
  
 
 /// The user object contains Twitter user account metadata describing the referenced user.
-public struct User: Codable, Identifiable {
+public class User: Codable, Identifiable {
   public typealias ID = String
 
 ///added by SpicyApps
