@@ -7,7 +7,7 @@ public struct User: Codable, Identifiable {
   public typealias ID = String
 
   ///added by SpicyApps
-  public let relation: String
+  public var relation: String
   
   /// The unique identifier of this user.
   public let id: ID
