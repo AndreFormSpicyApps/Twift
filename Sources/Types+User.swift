@@ -1,6 +1,8 @@
 import Foundation
 
  
+///modified by SpicyApps
+///changed from stuct to class
 
 /// The user object contains Twitter user account metadata describing the referenced user.
 public class User: Codable, Identifiable {
