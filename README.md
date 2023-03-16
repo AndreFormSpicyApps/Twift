@@ -1,4 +1,4 @@
-# Twift
+# Twift - SpicyApps added oAuth 1.0a - because oAuth 2.0 always redirects to native Twitter app, when its installed.
 
 [![Twitter API v2 badge](https://img.shields.io/endpoint?url=https%3A%2F%2Ftwbadges.glitch.me%2Fbadges%2Fv2)](https://developer.twitter.com/en/docs/twitter-api/early-access)
 [![Documentation Coverage](https://github.com/daneden/Twift/blob/badges/.github/badges/coverage.svg)](https://github.com/daneden/Twift/wiki)
